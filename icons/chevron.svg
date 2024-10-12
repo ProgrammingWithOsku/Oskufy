@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-chevron" viewBox="0 0 24 24">
+    <!-- Modify the path so the chevron points down -->
+    <path d="M6 8l6 6 6-6" />
+  </symbol>
+</svg>
