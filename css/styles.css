@@ -210,6 +210,14 @@ a {
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+  outline: 0;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -692,28 +700,69 @@ a {
 }
 
 /* Hero */
-.hero{
+.hero {
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
-.hero__tagline{
-font-size: 2rem;
-color: #b9c3cf;
-letter-spacing: 1px;
-margin: 2rem 0 5rem;
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
 }
 
-.hero__image{
-width: 100%;
+.hero__image {
+  width: 100%;
 }
 
 
-@media  screen and (min-width:786px) {
-  .hero{
+@media screen and (min-width:786px) {
+  .hero {
     padding-top: 0;
   }
-  .hero__content{
+
+  .hero__content {
     text-align: left;
     align-self: center;
   }
-  
+
+}
+
+
+
+/* Domain Block */
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  /* Applies a shadow around the block */
+  border: 0;
+  /* No border */
+  margin: 4rem auto;
+  /* Vertical margin */
+  max-width: 1000px;
+
+}
+
+.block-domain__prices {
+  display: grid;
+  /* Uses CSS Grid for layout */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 equal columns */
+  grid-template-rows: repeat(3, 6rem);
+  /* 3 rows of fixed height */
+  font-size: 2rem;
+  /* Font size for the text */
+  font-weight: 600;
+  /* Bold font weight */
+  justify-items: center;
+  /* Center items within each grid cell */
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 786px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    /* Adjusts columns to fit available space */
+  }
 }

@@ -1,0 +1,31 @@
+<section class="block container block-domain">
+    <header class="block__header">
+      <h2>Starting at $9 per month</h2> <!-- Removed 'dollar' for a cleaner look -->
+      <p>
+        Discover the perfect domain for your next project. Get started today!
+      </p> <!-- Updated text for clarity and engagement -->
+    </header>
+  
+    <div class="input-group">
+      <input
+        type="text"
+        class="input"
+        placeholder="Type your domain name here..."
+        aria-label="Domain name input"
+      />
+      <button class="btn btn--accent" aria-label="Search for domain"> <!-- Changed span to button for semantics -->
+        <svg class="icon icon--white" aria-hidden="true"> <!-- Added aria-hidden to hide the icon from screen readers -->
+          <use href="../icons/sprite.svg#search"></use> <!-- Updated to href -->
+        </svg>Search
+      </button>
+    </div>
+  
+    <ul class="list block-domain__prices">
+      <li><span class="badge badge--secondary">.com - $9</span></li>
+      <li><span class="badge">.fi - $15</span></li> <!-- Wrapped prices in span for consistent styling -->
+      <li><span class="badge">.iq - $20</span></li>
+      <li><span class="badge">.fr - $10</span></li>
+      <li><span class="badge">.io - $30</span></li>
+      <li><span class="badge">.br - $5</span></li>
+    </ul>
+  </section>
